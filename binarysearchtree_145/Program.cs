@@ -31,8 +31,12 @@ namespace BinarySearchTree
         {
             public node ROOT;
 
-            
-            
+            public BinaryTree()
+            {
+                ROOT = null;
+            }
+
+
         }
     }
 }
