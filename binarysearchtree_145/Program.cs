@@ -14,7 +14,7 @@ namespace BinarySearchTree
         class node
         {
             public string info;
-            public node lchidl;
+            public node lchid;
             public node rchild;
 
             //constructor for the node class
@@ -22,9 +22,17 @@ namespace BinarySearchTree
             public node(string i, node l, node r )
             {
                 info = i;
-                lchild = l;
+                lchid = l;
                 rchild = r;
             }
+        }
+
+        class BinaryTree
+        {
+            public node ROOT;
+
+            
+            
         }
     }
 }
