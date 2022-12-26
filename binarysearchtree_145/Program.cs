@@ -126,5 +126,22 @@ namespace BinarySearchTree
                 }
             }
         }
+
+        static void main(string[] args)
+        {
+            BinaryTree x = new BinaryTree();
+            while (true)
+            {
+                Console.WriteLine("\nMenu");
+                Console.WriteLine("1. Implement Insert Operation");
+                Console.WriteLine("2. perform inorder traversal");
+                Console.WriteLine("3. perform peorder traversal");
+                Console.WriteLine("4. perform postorder traversal");
+                Console.WriteLine("5. Exit ");
+                
+
+                }
+            }
+        }
     }
 }
