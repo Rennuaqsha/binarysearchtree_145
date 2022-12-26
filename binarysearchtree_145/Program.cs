@@ -54,18 +54,32 @@ namespace BinarySearchTree
                     {
                         ROOT = tmp;
                     }
-                }
-                else if (string.Compare(element,parent.info) <0 )
-                {
-                    if (string.Compare(element, parent.info) < 0)
+
+                    else if (string.Compare(element, parent.info) < 0)
+                    {
+                        if (string.Compare(element, parent.info) < 0)
+                            parent.lchid = tmp;
+                    }
+                    else
+                    {
                         parent.lchid = tmp;
-                }
-                else
-                {
-                    parent.lchid = tmp;
-                }
+                    }
+                }  
             }
 
+            public void find(string element, ref node parent, ref node currentnode)
+            {
+                currentnode = ROOT;
+                parent = null; 
+                while((currentnode != null) && (currentnode.info != element))
+                {
+                    parent = currentnode;
+                    if(string.Compare(element, currentnode.info) < 0)
+                        currentnode = currentnode.lchid;
+                    else
+                        currentnode = currentnode.lchid;
+                }
+            }
         }
     }
 }
